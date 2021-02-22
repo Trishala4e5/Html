@@ -1,0 +1,74 @@
+<HTML>
+ <style>
+  body{text-align:center;
+       background-image:linear-gradient(to bottom right,#33adf,#7300e6)
+       color:black;}
+  #body{width:600px;
+        padding:30px;
+        margin:auto;
+        border-radius:10px;
+        text-align:left;
+        background-color:rgba(0,0,0,6);
+        font-size:20px;
+        color:white;}
+  #submit{background-color:green;
+          color:white;
+          font-size:20px;
+          border-radius:10px;
+          width:590px;
+          margin-top:3%
+          }
+  
+  </style>
+ 
+ <body>
+  <h1 id="title">freeCodeCamp Survey Form </h1>
+  <p id="description">Thank you for taking the time to help us improve the platform </p>
+  <div id="body">
+  <form id="survey-form">
+   <label for="name" id="name-label">Name<br>
+     <input type="text" id="name"  size=35  value="" placeholder="Enter Your Name" required>
+   </label>
+   <br><br>
+   <label for="email" id="email-label">Email<br>
+     <input type="text" id="email"  size=35  value="" placeholder="Enter Your Email" required>
+   </label>
+   <br><br>
+   <label for="number" id="number-label">Age(optional)<br>
+     <input type="number" id="number" size=35 min="12" max="50" value="" placeholder="Age">
+   </label>
+   <br><br>
+   <p>Which option best describes your current role? :</p><br>
+   <select id="dropdown">
+   <option VALUE=>current role
+   <option VALUE="student">student</option>
+   <option VALUE="full time job">full time job</option>
+   <option VALUE="full time learner">full time learner</option>
+   <option VALUE="Prefer not to say">Prefer not to say</option>
+   <option VALUE="other">other</option>
+   </select>
+   <p> Would you recommend freeCodeCamp to a friend?<br>
+    <input type="radio" name="recommend" value=1>Definitely<br>
+    <input type="radio" name="recommend" value=2>Maybe<br>
+    <input type="radio" name="recommend" value=3>Not sure
+   </p>
+   <p> What is your favorite feature of freeCodeCamp?<br>
+    <input type="checkbox" name="favfeature" value=1>Front-end Projects<br>
+    <input type="checkbox" name="favfeature" value=2>Back-end Projects<br>
+    <input type="checkbox" name="favfeature" value=3>Data Visualization<br>
+    <input type="checkbox" name="favfeature" value=4>Challenges<br>
+    <input type="checkbox" name="favfeature" value=5>Open Source Community<br>
+    <input type="checkbox" name="favfeature" value=6>Gitter help rooms<br>
+    <input type="checkbox" name="favfeature" value=7>Videos<br>
+    <input type="checkbox" name="favfeature" value=8>City Meetups<br>
+    <input type="checkbox" name="favfeature" value=9>Wiki<br>
+    <input type="checkbox" name="favfeature" value=10>Forum<br>
+    <input type="checkbox" name="favfeature" value=11>Additional Courses
+   </p>
+   Any comments or suggestions?:<br>
+   <TEXTAREA id="Comment" cols=60 rows=6 value="enter your comments here"></TEXTAREA><br>
+   <input id="submit" type="submit" value="submit" size=35>
+   </div>
+   </form>
+  </body>
+</HTML>
